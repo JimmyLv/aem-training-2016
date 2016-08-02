@@ -37,7 +37,7 @@
     <!-- ====================================================================== -->
     <properties>
         <crx.host>localhost</crx.host>
-        <crx.port>4502</crx.port>
+        <crx.port>4505</crx.port>
         <crx.user>admin</crx.user>
         <crx.password>admin</crx.password>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
