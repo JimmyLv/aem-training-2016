@@ -1,3 +1,5 @@
 #base=script
-vendor/jquery-1.12.4.min.js
+vendor/jquery.js
 vendor/bootstrap.min.js
+vendor/base.js
+vendor/jquery.pjax.js

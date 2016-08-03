@@ -1,0 +1,208 @@
+<div class="page-header">
+    <div class="page-header-bar">
+        <div class="cont-wrap">
+            <div class="grid_12">
+                <a class="page-header-li page-header-li-home" href="http://www.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">主页</div>
+                    <div class="page-header-li-d">HOME</div>
+                </a>
+                <a class="page-header-li page-header-li-frontend" href="http://photo.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">相册</div>
+                    <div class="page-header-li-d">LOFTER</div>
+                </a>
+                <a class="page-header-li page-header-li-design page-header-li-active" href="http://blog.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">绿色</div>
+                    <div class="page-header-li-d">JIMMY</div>
+                </a>
+                <a class="page-header-li page-header-li-backend" href="http://farbox.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">橙色</div>
+                    <div class="page-header-li-d">FARBOX</div>
+                </a>
+                <a class="page-header-li page-header-li-sec" href="http://blog.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">红色</div>
+                    <div class="page-header-li-d">THEME</div>
+                </a>
+                <a class="page-header-li page-header-li-ops" href="http://blog.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">蓝色</div>
+                    <div class="page-header-li-d">THEME</div>
+                </a>
+                <a class="page-header-li page-header-li-ops" href="http://blog.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">紫色</div>
+                    <div class="page-header-li-d">THEME</div>
+                </a>
+                <a class="page-header-li page-header-li-ops" href="http://blog.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">青色</div>
+                    <div class="page-header-li-d">THEME</div>
+                </a>
+                <a class="page-header-li page-header-li-ops" href="http://blog.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">橘色</div>
+                    <div class="page-header-li-d">THEME</div>
+                </a>
+                <a class="page-header-li page-header-li-ops" href="http://blog.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">白色</div>
+                    <div class="page-header-li-d">THEME</div>
+                </a>
+                <a class="page-header-li page-header-li-ops" href="http://blog.jimmylv.info">
+                    <div class="page-header-li-s">
+                        <div class="page-header-li-si"></div>
+                    </div>
+                    <div class="page-header-li-t">黑色</div>
+                    <div class="page-header-li-d">THEME</div>
+                </a>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 aside visible-md visible-lg">
+            <div class="row navside">
+                <div class="col-md-3 col-xs-3 aside1">
+                    <a class="pjaxlink" href="/"><img src="http://blog.jimmylv.info/public/img/gavatar.jpg" class="img-circle avatar"></a>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#category" data-toggle="tab">{{ category1 }}</a></li>
+                        <li><a href="#category" data-toggle="tab">{{ category2 }}</a></li>
+                        <li class="active"><a href="#category" data-toggle="tab">{{ category3 }}</a></li>
+                        <li><a href="#category" data-toggle="tab">{{ category4 }}</a></li>
+                        <li><a href="#category" data-toggle="tab">{{ category5 }}</a></li>
+                        <li>
+                            <sly data-sly-resource="${'category' @ resourceType='wcm/foundation/components/parsys'}"/>
+                        </li>
+                        <li><a href="#tags" data-toggle="tab">{{ tags }}</a></li>
+                        <li><a href="/pages/archive/">{{ archive }}</a></li>
+                        <li><a href="/pages/about/">{{ about }}</a></li>
+                    </ul>
+                    <div class="aside1_bottom">
+                        <table class="table table-condensed">
+                            <tr>
+                                <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-2x" style="color:#000;"></i></a></td>
+                                <td><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o fa-2x" style="color:#000;"></i></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-xs-9 aside2">
+                    <div class="row navside2">
+                        <div class="tab-content">
+                            <div class="no-tab-pane" id="category">
+                                <div class="list-group">
+                                    <a href="http://blog.jimmylv.info" class="list-group-item-lay pjaxlink">{{ article1.title }}</a>
+                                    <a href="http://blog.jimmylv.info" class="list-group-item-lay pjaxlink">{{ article2.title }}</a>
+                                    <a href="http://blog.jimmylv.info" class="list-group-item-lay pjaxlink">{{ article3.title }}</a>
+                                    <a href="http://blog.jimmylv.info" class="list-group-item-lay pjaxlink">{{ article4.title }}</a>
+                                    <a href="http://blog.jimmylv.info" class="list-group-item-lay pjaxlink">{{ article5.title }}</a>
+                                    <a href="http://blog.jimmylv.info" class="list-group-item-lay pjaxlink">{{ article6.title }}</a>
+                                    <sly data-sly-resource="${'article' @ resourceType='wcm/foundation/components/parsys'}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tags">
+                    <div class="panel-group" id="accordion">
+                        {% for tag in site.tags %}
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+                                    <span class="badge pull-right">{{ tag[1].size }}</span>
+                                </h4>
+                            </div>
+                            <div id="{{ tag[0] }}" class="panel-collapse collapse">
+                                {% for post in tag[1] %}
+                                <a href='{{ post.url }}' class="list-group-item pjaxlink">
+                                    {{post.title}}
+                                </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 aside3">
+            <div id="container">
+                <div id="pjax">
+                    <div class="row yue">
+                        <div class="col-md-12 aside3-title">
+                            <h1 id="#identifier">{{ page.title }}</h1>
+                            <div class="aside3-date">{{ page.date | date:"%Y年%m月%d日" }}</div>
+                        </div>
+                        <div class="col-md-12 aside3-content">
+                            <div id="content">
+                                <h1 id="active-reading-the-art-of-annotation--">{{ page.title }}</h1>
+                                <div>{{ content }}</div>
+                                <sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+                                <sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <sly data-sly-resource="${'test1' @ resourceType='wcm/foundation/components/parsys'}"/>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <sly data-sly-resource="${'test2' @ resourceType='wcm/foundation/components/parsys'}"/>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <sly data-sly-resource="${'test3' @ resourceType='wcm/foundation/components/parsys'}"/>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <sly data-sly-resource="${'test4' @ resourceType='wcm/foundation/components/parsys'}"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 目录 -->
+                        <div id="content_table" style="position:fixed;right:20px;top:120px;display:none;">
+                            <div class="panel panel-success">
+                                <div class="panel-body" id="nav"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <sly data-sly-include="footerlibs.html"/>
+
+</div>
+
