@@ -15,11 +15,11 @@
 */-->
 
 <div class="container">
-    <p data-sly-test="${properties.text}">Text property: ${properties.text}</p>
+    <p data-sly-test="${properties.text}">Text property set in Touch-UI: ${properties.text}</p>
     <div class="panel panel-default"
-        data-sly-use.hello="com.thoughtworks.www.samples.models.ArticleModel">
+        data-sly-use.article="com.thoughtworks.www.samples.models.ArticleModel">
         <h1>Blog title: ${article.title}</h1>
         <h4>created at: ${article.date}</h4>
-        <p>${article.content}</p>
+        <p>content: ${article.content}</p>
     </div>
 </div>
