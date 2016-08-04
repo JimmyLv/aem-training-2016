@@ -17,16 +17,15 @@ import java.util.Map;
 
 /**
  * This servlet returns informations about all assets used on the page as JSON.
- *
+ * <p>
  * It binds with the selector "references" and the extension "json" and can be used only for all
  * pages (jcr:primaryType = cq:Page).
  * In case of problems or errors an empty JSON is returned.
- *
+ * <p>
  * you can use it like this: http://localhost:4502/content/geometrixx/en/products.references.json
- *
  */
 
-@SlingServlet(resourceTypes="cq/Page", selectors="references", extensions="json", methods="GET")
+@SlingServlet(resourceTypes = "cq/Page", selectors = "references", extensions = "json", methods = "GET")
 public class ReferencedAssetsServlet extends SlingSafeMethodsServlet {
 
     private static final String DAM_ROOT = "/content/dam";
@@ -34,7 +33,7 @@ public class ReferencedAssetsServlet extends SlingSafeMethodsServlet {
     private static Logger LOG = LoggerFactory.getLogger(ReferencedAssetsServlet.class);
 
     @Override
-    protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException  {
+    protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
         response.setContentType("application/json");
         try {
             JSONObject jsonOut = new JSONObject();
@@ -50,12 +49,11 @@ public class ReferencedAssetsServlet extends SlingSafeMethodsServlet {
 
             // let's use the specialized assetReferenceSearch, which does all the work for us
 
-            AssetReferenceSearch search = new AssetReferenceSearch
-                    (jcrNode, DAM_ROOT, request.getResourceResolver());
-            Map<String,Asset> result = search.search();
+            AssetReferenceSearch search = new AssetReferenceSearch(jcrNode, DAM_ROOT, request.getResourceResolver());
+            Map<String, Asset> result = search.search();
 
 
-            for (String key: result.keySet()) {
+            for (String key : result.keySet()) {
                 Asset asset = result.get(key);
                 JSONObject assetDetails = new JSONObject();
                 assetDetails.put("path", asset.getPath());
@@ -64,9 +62,9 @@ public class ReferencedAssetsServlet extends SlingSafeMethodsServlet {
                 jsonOut.put(asset.getName(), assetDetails);
             }
             response.getOutputStream().print(jsonOut.toString(2));
-        }  catch (JSONException e) {
+        } catch (JSONException e) {
             // print empty JSON
-            LOG.error ("Cannot serialize JSON",e);
+            LOG.error("Cannot serialize JSON", e);
             response.getOutputStream().print(new JSONObject().toString());
         }
     } // doGet

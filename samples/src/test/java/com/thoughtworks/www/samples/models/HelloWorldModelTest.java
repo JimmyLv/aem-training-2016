@@ -25,7 +25,7 @@ public class HelloWorldModelTest {
     @Mock
     SlingSettingsService settings;
 
-    public Resource resource;
+    private Resource resource;
 
     private HelloWorldModel helloWorldModel;
 

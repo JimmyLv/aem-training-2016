@@ -13,7 +13,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import static org.junit.Assert.assertEquals;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -44,6 +45,6 @@ public class ReferencedAssetsServletTest {
     @Test
     public void testDoGet() throws Exception {
         referencedAssetsServlet.doGet(request, response);
-        assertEquals("application/json", response.getContentType());
+        assertThat(response.getContentType(), is("application/json"));
     }
 }
