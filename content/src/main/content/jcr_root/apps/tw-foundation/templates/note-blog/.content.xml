@@ -5,6 +5,7 @@
           jcr:description="Basic Template for my note blog."
           allowedPaths="/content(/.*)?"
           ranking="{Long}1">
+    <!--// TODO: What's PageContent?-->
     <jcr:content
             jcr:primaryType="cq:PageContent"
             sling:resourceType="tw-foundation/components/note-blog">
