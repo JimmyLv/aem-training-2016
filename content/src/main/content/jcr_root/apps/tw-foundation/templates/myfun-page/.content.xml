@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          jcr:primaryType="cq:Template"
+          jcr:title="MyFun Basic Template"
+          jcr:description="Basic Template for MyFun website."
+          allowedPaths="/content(/.*)?"
+          ranking="{Long}1">
+    <!--// TODO: What's PageContent?-->
+    <jcr:content
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="tw-foundation/components/myfun-page">
+    </jcr:content>
+</jcr:root>
