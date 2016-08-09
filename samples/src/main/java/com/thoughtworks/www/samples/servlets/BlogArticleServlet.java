@@ -36,6 +36,7 @@ public class BlogArticleServlet extends SlingSafeMethodsServlet {
             JSONObject articleDetails = new JSONObject();
             articleDetails.put("path", "test-path");
             articleDetails.put("mimetype", "test-mimetype");
+            articleDetails.put("title", "test-title");
             jsonOut.put("article", articleDetails);
 
             response.getOutputStream().print(jsonOut.toString(2));
