@@ -1,6 +1,17 @@
-<sly data-sly-resource="${'header' @ resourceType='tw-foundation/components/mf-header'}"/>
+<div class="zh">
+    <div class="mf-header">
+        <sly data-sly-resource="${'header' @ resourceType='tw-foundation/components/mf-header'}"/>
+    </div>
+    <div id="main" class="clearfix">
 
-<h1>Hello MyFun!!!</h1>
+        <div class="phone-hidden pad-visible desktop-visible">
+            <sly data-sly-resource="${'mf-banner' @ resourceType='tw-foundation/components/mf-banner'}"/>
+            <sly data-sly-resource="${'image' @ resourceType='wcm/foundation/components/parsys'}"/>
+        </div>
+    </div>
 
-<sly data-sly-resource="${'banner' @ resourceType='wcm/foundation/components/parsys'}"/>
-<sly data-sly-resource="${'marketing-banner' @ resourceType='wcm/foundation/components/parsys'}"/>
+    <h1>Hello MyFun!!!</h1>
+
+    <sly data-sly-resource="${'image-banner' @ resourceType='wcm/foundation/components/parsys'}"/>
+    <sly data-sly-resource="${'marketing-banner' @ resourceType='wcm/foundation/components/parsys'}"/>
+</div>
